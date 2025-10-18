@@ -17,7 +17,7 @@ All visible elements include the required `data-testid` attributes for automated
 ---
 
 ## Live Demo
-[Your hosted live link here — e.g., Netlify or GitHub Pages]
+[View the Profile Card live](https://myprofile-card0.netlify.app/)
 
 ---
 
