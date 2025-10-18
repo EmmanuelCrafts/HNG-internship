@@ -7,7 +7,9 @@
 </head>
 <body>
     <article class="profile-card" data-testid="test-profile-card">
-        <img src="" alt="">
+        <figure>
+             <img src="images/image-victor.jpg" alt="profile picture of Emmanuel Oginga" data-testid="test-user-avatar"/>
+        </figure>
         <h2 data-testid="test-user-name">Emmanuel Oginga</h2>
         <p data-testid="test-user-bio">A frontend developer who loves learning, building cool web experiences, and improving a little every day.</p>
         <p data-testid="test-user-time"></p>
@@ -42,5 +44,15 @@
             </ul>
         </section>
     </article>
+    <script>
+        // Display current time in the user time paragraph
+       const time = document.querySelector('[data-testid="test-user-time"]');
+       const updateTime = () => {
+        const milliseconds = Date.now();
+        time.textContent = `Current time (in milliseconds): ${milliseconds}`;
+       }
+       setInterval(updateTime, 1000);
+       updateTime;
+    </script>
 </body>
 </html>
