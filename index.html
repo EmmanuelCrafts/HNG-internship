@@ -16,15 +16,15 @@
         <p class="bio" data-testid="test-user-bio">A frontend developer who loves learning, building cool web experiences, and improving a little every day.</p>
         <p  class="time" data-testid="test-user-time"></p>
 
-        <section data-testid="test-user-social-links">
+        <nav data-testid="test-user-social-links">
             <ul class="logos">
                 <li><a href="https://x.com/EmmanuelCrafts" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-twitter"><img src="images/icons8-twitter (1).svg" alt="twitter logo"></a></li>
                 <li><a href="https://github.com/EmmanuelCrafts" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-github"><img src="images/icons8-github-30.png" alt="github logo"></a></li>
-                <li><a href="https://www.linkedin.com/in/emmanuel-oginga-ab1ba9352/" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-linkedIn"><img src="images/icons8-linkedin-48.png" alt="linkedin logo"></a></li>
+                <li><a href="https://www.linkedin.com/in/emmanuel-oginga-ab1ba9352/" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-linkedin"><img src="images/icons8-linkedin-48.png" alt="linkedin logo"></a></li>
                 <li><a href="https://www.instagram.com/n.u.e.lla/" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-instagram"><img src="images/icons8-instagram-logo-94.png" alt="instagram logo"></a></li>
             </ul>
-        </section>
-
+        </nav>
+       <div class="container">
         <section class="sec-container">
             <h3>Hobbies</h3>
             <ul class="hobbies list" data-testid="test-user-hobbies">
@@ -44,6 +44,7 @@
                 <li>Self-doubt</li>
             </ul>
         </section>
+        </div>
     </article>
     <script>
         // Display current time in the user time paragraph
@@ -53,7 +54,7 @@
         time.textContent = `Current time (ms): ${milliseconds}`;
        }
        setInterval(updateTime, 1000);
-       updateTime;
+       updateTime();
     </script>
 </body>
 </html>
